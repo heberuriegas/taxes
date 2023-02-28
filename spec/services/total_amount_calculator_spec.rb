@@ -12,7 +12,6 @@ RSpec.describe Services::TotalAmountCalculator, type: :service do
       @amounts = subject.perform(@line_items)
     end
 
-    # TODO: stub Services::LineItemTaxIdentifier.perform
     it 'calculate total' do
       expect(@amounts[:total]).to eq(@line_items.sum(&:amount))
     end

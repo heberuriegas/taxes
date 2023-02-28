@@ -8,37 +8,37 @@ RSpec.describe Services::LineItemTaxIdentifier, type: :service do
   subject { Services::LineItemTaxIdentifier }
 
   context 'class methods' do
-    context 'exent line items' do
+    context 'for exent line items' do
       before(:each) do
         @exent_line_item = build(:exent_line_item)
         @service = subject.perform(@exent_line_item.name)
       end
 
-      it 'does not have taxes' do
+      it 'define tax types' do
         expect(@service[:basic_tax]).to eq(false)
         expect(@service[:import_tax]).to eq(false)
       end
     end
 
-    context 'basic line items' do
+    context 'for basic line items' do
       before(:each) do
         @basic_line_item = build(:basic_line_item)
         @service = subject.perform(@basic_line_item.name)
       end
 
-      it 'does not have taxes' do
+      it 'define tax types' do
         expect(@service[:basic_tax]).to eq(true)
         expect(@service[:import_tax]).to eq(false)
       end
     end
 
-    context 'import line items' do
+    context 'for import line items' do
       before(:each) do
         @import_line_item = build(:import_line_item)
         @service = subject.perform(@import_line_item.name)
       end
 
-      it 'import_taxes' do
+      it 'define tax types' do
         expect(@service[:basic_tax]).to eq(false)
         expect(@service[:import_tax]).to eq(true)
       end
