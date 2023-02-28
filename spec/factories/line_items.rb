@@ -15,7 +15,7 @@ FactoryBot.define do
     FFaker::Product.product_name
   end
 
-  sequence :exent_line_item_name do
+  sequence :exempt_line_item_name do
     "#{Utils::Dictionary::BASIC_TAX_DICTIONARY.sample} #{FFaker::Product.product_name}"
   end
 
@@ -46,8 +46,8 @@ FactoryBot.define do
     import_tax { false }
   end
 
-  factory :exent_line_item, class: Models::LineItem, parent: :line_item do
-    name { generate(:exent_line_item_name) }
+  factory :exempt_line_item, class: Models::LineItem, parent: :line_item do
+    name { generate(:exempt_line_item_name) }
     basic_tax { false }
     import_tax { false }
   end

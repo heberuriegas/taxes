@@ -28,9 +28,9 @@ RSpec.describe Services::TaxCalculator, type: :service do
       end
     end
 
-    context 'for exent line items' do
+    context 'for exempt line items' do
       before(:each) do
-        @line_item = build(:exent_line_item)
+        @line_item = build(:exempt_line_item)
         @price_in_cents = subject.decimal_to_cents(@line_item.price)
         @taxes = subject.perform(@line_item.name, @line_item.price)
       end

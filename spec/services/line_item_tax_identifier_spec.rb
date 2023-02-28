@@ -8,10 +8,10 @@ RSpec.describe Services::LineItemTaxIdentifier, type: :service do
   subject { Services::LineItemTaxIdentifier }
 
   context 'class methods' do
-    context 'for exent line items' do
+    context 'for exempt line items' do
       before(:each) do
-        @exent_line_item = build(:exent_line_item)
-        @service = subject.perform(@exent_line_item.name)
+        @exempt_line_item = build(:exempt_line_item)
+        @service = subject.perform(@exempt_line_item.name)
       end
 
       it 'define tax types' do
