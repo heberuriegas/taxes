@@ -1,10 +1,10 @@
-### Setup please run:
+### For setup please run:
 
 ```
 bundle install
 ```
 
-### To execute the program with intended inputs please run:
+### For execute the program with intended inputs please run:
 
 ```
 echo "\nOutput 1:"
@@ -15,7 +15,7 @@ echo "\nOutput 3:"
 ruby main.rb < input3.txt
 ```
 
-### To run tests please run:
+### For tests please run:
 
 ```
 rspec .
