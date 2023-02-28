@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './services/line_item_tax_identifier'
+require './app/services/line_item_tax_identifier'
 
 module Services
   # Will calculate taxes depending

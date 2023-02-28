@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require './spec/spec_helper'
-require './services/line_item_tax_identifier'
+require './app/services/line_item_tax_identifier'
 
 # rubocop:disable Metrics/BlockLength
 RSpec.describe Services::LineItemTaxIdentifier, type: :service do

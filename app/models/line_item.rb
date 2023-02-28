@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './services/tax_calculator'
+require './app/services/tax_calculator'
 
 module Models
   # Represent a line item of a buy

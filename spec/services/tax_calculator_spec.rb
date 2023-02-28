@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require './spec/spec_helper'
-require './services/tax_calculator'
+require './app/services/tax_calculator'
 
 # rubocop:disable Metrics/BlockLength
 RSpec.describe Services::TaxCalculator, type: :service do

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require './spec/spec_helper'
-require './models/line_item'
+require './app/models/line_item'
 
 RSpec.describe Models::LineItem, type: :model do
   subject { build(:line_item) }

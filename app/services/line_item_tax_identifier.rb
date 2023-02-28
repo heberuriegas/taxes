@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './utils/dictionary'
+require './app/utils/dictionary'
 
 module Services
   # Identify if a line item is a base tax or imported tax line item

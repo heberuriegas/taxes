@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './models/line_item'
+require './app/models/line_item'
 
 module Utils
   # Utils for main program

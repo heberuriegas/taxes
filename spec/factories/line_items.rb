@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'ffaker'
-require './models/line_item'
-require './services/line_item_tax_identifier'
-require './utils/dictionary'
+require './app/models/line_item'
+require './app/services/line_item_tax_identifier'
+require './app/utils/dictionary'
 
 FactoryBot.define do
   sequence :line_item_name do

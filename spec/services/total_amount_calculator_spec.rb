@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require './spec/spec_helper'
-require './services/total_amount_calculator'
+require './app/services/total_amount_calculator'
 
 RSpec.describe Services::TotalAmountCalculator, type: :service do
   subject { Services::TotalAmountCalculator }

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require './utils/main'
-require './services/total_amount_calculator'
+require './main_utils'
+require './app/services/total_amount_calculator'
 
 input = []
 loop do
@@ -11,7 +11,7 @@ loop do
   input << line.chomp
 end
 
-line_items = input.map { |line| Utils::Main.generate_line_item(line) }
+line_items = input.map { |line| MainUtils.generate_line_item(line) }
 amounts = Services::TotalAmountCalculator.perform(line_items)
 
 # Output
